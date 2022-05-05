@@ -54,16 +54,6 @@ def loggin():
 
         print('|Senha inserida!|')
 
-    except NoSuchElementException:
-
-        pass
-
-    return test
-
-
-
-    sleep(3)
-    try:
         driver.implicitly_wait(0)
         sms = driver.find_element(By.XPATH,'//*[@id="render-admin.login-legacy.home"]/div/div/div/div[1]/div[2]/div[1]/div/div[1]').is_displayed()
         while sms == 1:
