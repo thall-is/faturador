@@ -1,4 +1,3 @@
-import json
 from time import sleep
 from selenium.webdriver.common.by import By
 from selenium import webdriver
@@ -8,21 +7,10 @@ from selenium.webdriver.support.expected_conditions import frame_to_be_available
 from selenium.webdriver.support.select import Select
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import NoSuchElementException
-from selenium.webdriver.chrome.options import Options
 import re
 
 # setando as config do web driver chrome
 
-options = webdriver.ChromeOptions()
-
-settings = {
-     "pages": [{
-         "value": "1"}]
-}
-
-prefs = {'printing.print_preview_sticky_settings.appState': json.dumps(settings)}
-options.add_experimental_option('prefs', prefs)
-options.add_argument('--kiosk-printing')
 driver = webdriver.Chrome(r"chromedriver.exe", options=options)
 driver.implicitly_wait(20)
 
