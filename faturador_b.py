@@ -258,7 +258,7 @@ while True:
 
             for i in range(0,len(list_pedidos)):
                 try:
-                    driver.get('https://bijutotal.myvtex.com/admin/checkout/#/orders/'+list_pedidos[i])
+                    driver.get('https://{nome da loja}.myvtex.com/admin/checkout/#/orders/'+list_pedidos[i])
                     espera(4,1)
                     wait.until(
                         frame_to_be_available_and_switch_to_it(
