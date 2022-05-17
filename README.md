@@ -1,2 +1,2 @@
 # faturador
-# um bot experimental para faturar pedidos em lojas vtex
+# programa experimental para faturar pedidos em lojas vtex
